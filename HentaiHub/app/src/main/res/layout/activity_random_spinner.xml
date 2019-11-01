@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RandomSpinnerActivity"
+    android:background="@drawable/background_gradient2">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/random_description"
+        android:textAlignment="center"
+        android:paddingTop="25dp"
+        android:textColor="#ddeef7"
+        android:text="Let's see what is there for you today!"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:paddingTop="10dp"
+        android:layout_height="480dp"
+        android:src="@drawable/try_your_luck"
+        android:id="@+id/random_image"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
+        android:text="  press me  "
+
+        android:textColor="#696d70"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:onClick="onClickSpinner"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:icon="@drawable/home_icon"
+            android:title="Home"
+            android:checked="true"></item>
+        <item android:id="@+id/doraemon"
+            android:icon="@drawable/doraemonicon"
+            android:title="@string/doraemon"
+>
+        </item>
+        <item android:id="@+id/dbz"
+            android:icon="@drawable/dbzicon"
+            android:title="@string/dbz"
+
+            ></item>
+        <item android:id="@+id/naruto"
+            android:icon="@drawable/narutoicon"
+            android:title="@string/naruto"
+            ></item>
+        <item android:id="@+id/tokyo_ghouls"
+            android:icon="@drawable/tokyoicon"
+            android:title="@string/tokyo_ghouls"
+            ></item>
+    </group>
+
+    <item android:title="@string/liked_hentai">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:icon="@drawable/your_favourite"
+                android:title="@string/liked_hentai_title"
+                android:id="@+id/liked_hentai">
+
+            </item>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/support">
+        <menu>
+            <item
+                android:icon="@drawable/contacticon"
+                android:title="@string/contact_us"
+                android:id="@+id/contact_us"
+                >
+
+            </item>
+        </menu>
+    </item>
+
+</menu>
